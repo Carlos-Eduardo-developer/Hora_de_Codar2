@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let soma = 0;
+let numeros = [];
+
+for (let i = 0; i < 6; i++) {
+    let numero = parseFloat(prompt(`Informe o número ${i + 1}:`));
+    numeros.push(numero);
+    if (numero < 72) {
+        soma += numero;
+    }
+}
+
+alert(`A soma dos valores inferiores a 72 é: ${soma}`);
+alert(`Os números informados foram: ${numeros.join(", ")}`);
+
+    </script>
+    
+</body>
+</html>
